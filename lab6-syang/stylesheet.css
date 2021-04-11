@@ -1,0 +1,111 @@
+body{
+    background-color: #ffff00;
+    background-image: url(images/pikachu_background.png);
+    background-size: 100% 100%;  
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+main{
+    
+    background-color: #ffff00;
+    padding: 1rem;
+    margin: 1rem 25%;
+    
+}
+
+header{
+    background-color: #1c240585;
+}
+
+/*** Aligning the nav bar to be centered ***/
+nav{
+    text-align: center;
+}
+
+/*** Internals of the navbar such as the text ***/
+nav a{
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: inline-block;
+    background-color: #ffff00;
+    border-radius: 10%;
+}
+
+nav a:hover{
+    background-color: #FFFDD0;  
+    border-radius: 10%;
+}
+
+nav a:active{
+    background-color: #D5B85A;  
+    border-radius: 10%;
+}
+
+/*** The picture pictures on home tab ***/
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    color: #ffff00;
+}
+
+h2{
+    background-color: #add8e6;
+}
+
+/*** Pictures ***/
+.logo{
+    width: 10%;
+    align-self: center;
+}
+
+/*** Alignment of thunderstone and text ***/
+.ThunderStonePlacement{
+    display: flex;
+    flex-direction: column;
+}
+
+.ThunderStonePlacement > p {
+    text-align: center;
+}
+
+.rightArrow{
+    padding-top: 3rem;
+    width: 100px;
+    height: 100px;
+}
+
+.pichuSmiling{
+    width: 200px;  
+}
+
+.pikachuStanding{
+    width: 200px;
+}
+
+.raichuStanding{
+    width: 200px;
+    padding-left: 2rem;
+}
+
+.PokemonResize{
+    display: flex;
+    justify-content: center;
+}
+.pokemon{
+    align-self: center;
+    width: 350px;
+}
+
+/*** Span on the bulbapedia source ***/
+.bulb{
+    color: green;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}

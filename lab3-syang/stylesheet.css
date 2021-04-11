@@ -1,0 +1,54 @@
+body{
+    background-color: #7fffd4;
+}
+
+h2{
+    padding-left: 5rem;
+}
+
+p{
+    padding-left: 6rem;
+    padding-right: 6rem;
+    font-family:'Courier New', Courier, monospace;
+}
+
+ul{
+    padding-left: 5rem;
+    background-color: #f0ffff;
+    margin-left: 3rem;
+    margin-right: 5rem;
+}
+
+ol{
+    padding-left: 5rem;
+    background-color: #f0ffff;
+    margin-right: 5rem;
+    margin-left: 3rem;
+}
+
+li{
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+blockquote{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav{
+    margin-left: 30rem;
+}
+
+h1{
+    margin-left: 33rem;
+}
+
+h3{
+    margin-left: 5rem;
+}
+
+/* I believe that I could do divs or spans
+so I can edit the <p> inside of the <ol> or <ul>*/

@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+}
+
+header{
+    background-color: purple;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+.menu{
+    position: absolute;
+    background-color: white;
+    color: purple;
+    padding: 2rem;
+    top: 0.2rem;
+    right: 1rem;
+}
+
+nav{
+    display: none;
+    position: absolute;
+    top: 7rem;
+    right: 0.5rem;
+}
+
+nav a{
+    display: block;
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 1rem 2rem;
+}
+
+.show{
+    display:block;
+}
+
+main{
+    padding: 1rem;
+}
+
+.desktop{
+    display: none;
+}
+
+.square{
+    background-color: blueviolet;
+    height: 10rem;
+    width: 45%;
+    margin: .5rem;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer{
+    background-color: plum;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+
+footer img{
+    width: 2rem;
+}
+
+.social-media{
+    margin: 1rem;
+}
+
+.social-media a{
+    margin: 1rem;
+    color: purple;
+    text-decoration: none;
+}
+
+@media (min-width: 1200px){
+    .menu{
+        display: none;
+    }
+
+    nav{
+        display: block;
+        position: unset;
+    }
+
+    nav a{
+        display: inline-block;
+        margin: 1rem;
+    }
+
+    nav a:hover{
+        background-color: white;
+        color: blueviolet;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main{
+        margin: 2rem;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: block;
+    }
+
+    .two-column-text{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .two-column-text p{
+        width: 48%;
+    }
+
+    .gallery{
+        justify-content: space-between;
+    }
+
+    .square{
+        width: 18%;
+    }
+}

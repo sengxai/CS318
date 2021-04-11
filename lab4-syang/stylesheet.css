@@ -1,0 +1,73 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F3F9D2;
+    margin: 0;
+}
+
+header{
+    background-color: #2F2F2F;
+    color: #fff;
+    padding: 1.5rem;
+}
+
+h1{
+    margin: 0;
+    padding-bottom: .5rem;
+}
+
+nav a{
+    color: #fff;
+    background-color: #92B4A7;
+    padding: 1rem;
+    display:inline-block;
+}
+
+main{
+    padding: 1.5rem;
+}
+
+h2, h3, h4{
+    color: #92B4A7;
+}
+
+a{
+    color: #93827F;
+    font-weight: bolder;
+}
+
+#vegetables{
+    margin-top: 10rem;
+}
+
+.classes-and-ids-page li{
+    padding: 3rem 0;
+    margin: 1rem 0;
+}
+
+.green{
+    background-color: #D1F9D5;
+}
+.red{
+    background-color: #F9A995;
+}
+
+.blue{
+    background-color: #D1F3F9;
+}
+
+.yellow{
+    background-color: #F9F995;
+}
+
+.purple{
+    background-color: #CCB8F9;
+}
+
+.white{
+    background-color: #fff;
+}
+
+.orange{
+    background-color: #F9C195;
+}
+

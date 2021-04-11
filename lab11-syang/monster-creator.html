@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Monster Creator</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Eater&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <h1>Monster Creator</h1>
+            <form action="https://theresahanson.com/monster-creator" method="post" enctype="multipart/form-data">
+                <label>Monster's Name</label>
+                    <input type ="text" id="name" name="monster-name">
+                <label>Monster's Email</label>
+                    <input type="email" id="email" name="monster-email" value="@monstermail.com">
+                <label>Monster's Birthday</label>
+                    <input type="date" id="birthday" name="monster-birthday">
+                <fieldset>
+                    <legend>Scary?</legend>
+                    <label>YES!</label>
+                    <input type="radio" id="scary-yes" name="monster-scary">
+                    <label>No</label>
+                    <input type="radio" id="scary-no" name="monster-scary">
+                </fieldset>
+                <label>Color of Monster</label>
+                    <input type="color" id="color" name="monster-color">
+                <label>How many tentacles? (1-1,000,000)</label>
+                    <input type="number" id="tentacles" name="monster-tentacles" value = "1" min = "1" max = "1000000">
+                <label>Picture of Monster</label>
+                    <input type="file" id="picture" name="monster-picture" accept="images/*">
+                <label>Number of Eyeballs (1-22)</label>
+                    <input type="number" id="eyes" name="monster-eyes" min = "1" max = "22">
+                <label>Monster's Creator</label>
+                    <input type="text" id="creator" name="monster-creator" value="Your name here">
+
+                <div class="actions">
+                    <input type="reset" value="reset">
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

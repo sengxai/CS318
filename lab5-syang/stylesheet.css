@@ -1,0 +1,101 @@
+body{
+    background-color: #ebebeb;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: #026b3c;
+    color: white;
+    padding: 1rem;
+}
+
+main{
+    background-color: #fafafa;
+    width: 60rem;
+    margin: -1rem auto;
+}
+
+main img{
+    width: 60%;
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+footer{
+    background-color: #026b3c;
+}
+
+.logo{
+    width: 3rem;
+    margin: 0 1rem 1rem 2rem;
+    vertical-align: middle;
+}
+
+.image-only{
+    float: unset;
+    width: 100%;
+}
+
+nav a{
+    color: #026b3c;
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+nav{
+    margin: 1rem;
+}
+
+nav a:hover{
+    background-color: #026b3c;
+    color: #fff;
+    border: 1px solid white;
+}
+
+h1{
+    display: inline-block;
+}
+
+h2{
+    background-color: #026b3c;
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+article{
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #fff;
+}
+
+h3{
+    color: #026b3c;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+article > footer{
+    background-color: unset;
+    padding: 0;
+    text-align: left;
+}
+
+.author{
+    color: #026b3c;
+    font-weight: bold;
+}
+
+footer{
+    padding: 1rem;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    margin: 1rem;
+    color: #fff;
+}

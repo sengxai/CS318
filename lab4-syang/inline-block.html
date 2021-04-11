@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inline-Block</title>
+        <link rel="stylesheet" href="stylesheet.css">
+
+    </head>
+    <body>
+        <header>
+            <h1>Lab 4</h1>
+            <nav>
+                <a href="block.html">Display Block</a>
+                <a href="inline-block.html">Display Inline-Block</a>
+                <a href="classes-and-ids.html">Classes & IDs</a>
+            </nav>
+        </header>
+        <main>
+            <h2>Display Inline-Block</h2>
+            <p>Inline-Block elements display in the inline direction, that is 
+                in the direction words are displayed in a sentence, so left to 
+                right. Inline elements will be next to each other until they run out 
+                of space on the line, then they will create a new line.</p>
+
+            <h3>Common Display Inline-Block Elements</h3>
+            <h4>Images</h4>
+            <img src="images/michaelscott-ihate.gif" alt="Michael Scott I Hate">
+            <img src="images/michaelscott-no.gif" alt="Michael Scott No">
+            <img src="images/michaelscott-why.gif" alt="Michael Scott Why">
+            <img src="images/michaelscott-toby.gif" alt="Michael Scott Toby">
+            
+            <p>Images are display inline-block by default that is why they fill space 
+                from left to right rather than top to bottom. Also images line up on 
+                their baseline or bottom of the image. This can be changed with the 
+                CSS property vertical-align.</p>
+
+            <h4>Spans, Phrase Elements & Anchors</h4>
+            <span> <a href ="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span">Span</a> is an inline non-semantic element, which you should only 
+                use if you can't think of a better semantic text element to wrap 
+                your content, or don't want to add any specific meaning. Since it is an 
+                inline element it will not create a new element below but next to the 
+                previous element. Anchor tags are also inline elements which is why 
+                when adding the hyperlink to the word "Span" it did not create a new 
+                line of text. The same is true of phrase element tags such as <mark>mark</mark>, 
+                <b>bold</b>, and <i>italics</i>.</span>
+        </main>
+    </body>
+</html>

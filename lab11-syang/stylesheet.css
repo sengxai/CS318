@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    background-color: #18810f;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("images/eyeballs.svg");
+    background-size: 20%;
+}
+
+h1{
+    font-family: 'Eater', cursive;
+    background-color: black;
+    color: yellowgreen;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 5rem;
+}
+
+label{
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem 0 .25rem;
+}
+
+legend{
+    font-size: 1.5rem;
+    margin: 1rem 0 .25rem;
+}
+
+form{
+    background-color: rgba(0,0,0,.9);
+    padding: 1rem 2rem;
+    width: 32rem;
+    margin: 1rem auto;
+}
+
+input[type=text], [type=email], [type=date], [type=number], [type=color]{
+    font-size: 1.25rem;
+    width: 30rem;
+    border: 5px solid yellowgreen;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+input:focus[type=text], input:focus[type=email], input:focus[type=date], input:focus[type=number], input:focus[type=color]{
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+fieldset label {
+    display: inline-block;
+}
+
+fieldset{
+    border: 5px solid yellowgreen;
+    border-radius: .5rem;
+    margin: 1rem 0;
+}
+
+input[type=color]{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+}
+
+input[type=file]{
+    font-size: 1rem;
+    padding: 1rem 0;
+    width: 30rem;
+}
+
+.actions{
+    margin: 1rem 0;
+}
+
+input[type=reset], input[type=submit]{
+    font-family: 'Eater', cursive;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 3px solid yellowgreen;
+    margin: 0 2rem 0 0;
+}
+
+input[type=submit]{
+    background-color: yellowgreen;
+}
+
+input[type=reset]{
+    background-color: black;
+    color: yellowgreen;
+}
+
+input[type=submit]:hover{
+    background-color: black;
+    color: yellowgreen;
+}
+
+input[type=reset]:hover{
+    background-color: red;
+    color: black;
+    border: 5px solid red;
+}
