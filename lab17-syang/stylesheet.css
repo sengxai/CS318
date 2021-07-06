@@ -1,0 +1,272 @@
+body{
+    background-color: #1C2541;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+
+.social img{
+    height: 2rem;
+    margin: .25rem;
+    width: unset;
+}
+
+.hamburger{
+    width: 40px;
+    padding: .5rem;
+}
+
+.hamburger hr{
+    margin: .75rem 0;
+    border-width: 2px;
+    border-style: solid;
+}
+
+header nav{
+    background-color: #0b132b;
+    position: absolute;
+    width: 100%;
+    top: 4.75rem;
+    left: -100%;
+    transition: left 1s ease-in-out;
+
+}
+
+header nav a{
+    display: block;
+    color: #00e3c8;
+    text-align: center;
+    text-decoration: none;
+    padding: 3rem;
+    border: 1px solid #5bc0b4;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #0b132b85;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+
+header .show{
+    left: 0;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    top: 4.75rem;
+    position: fixed;
+    background-color: #0b132b65;
+    transition: left 1s ease-in-out;
+    left: -100%;
+}
+
+.overlay.show{
+    
+    left: 0;
+}
+
+.parallax{
+    position: fixed;
+    width: 150%;
+    top: 0;
+    z-index: -1;
+}
+
+.call-to-action{
+    padding: 6rem 1rem 3rem;
+}
+
+.call-to-action h2{
+    font-size: 3rem;
+}
+
+.button{
+    padding: 1rem;
+    background-color: #00e3c8;
+    color: #0b132b;
+    text-decoration: none;
+}
+
+section{
+    padding: 1rem;
+}
+
+.routes, .mountains{
+    background-color: #1c2541;
+}
+
+.gallery{
+    background-color: #fff;
+}
+
+h3{
+    color: #00e3c8;
+}
+
+p{
+    padding: 1rem 0;
+}
+
+.gallery h3{
+    color: #1c2541;
+}
+
+.gallery img{
+    padding: .5rem 0;
+}
+
+.routes div{
+    padding: 1rem 0 2rem;
+}
+
+.contact{
+    background-image: url("images/switzerland.jpg");
+    background-size: 180%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+form{
+    background-color: #00000080;
+    padding: 1rem;
+}
+
+label, input[type=text], input[type=email], textarea{
+    display: block;
+    margin: .5rem 0;
+}
+
+input[type=text], input[type=email], textarea{
+    width: 95%;
+    padding: .5rem;
+    font-size: 1rem;
+    border: 1px solid transparent;
+}
+
+textarea{
+    height: 5rem;
+    width: 96%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0b132b;
+}
+
+input:focus[type=text], input:focus[type=email], textarea:focus{
+    outline: none;
+    border: 1px solid #00e3c8;
+}
+
+footer{
+    background-color: #5bc0b4;
+    color: #0b132b;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (min-width: 1000px){
+    .hamburger{
+        display: none;
+    }
+
+    header nav{
+        position: unset;
+        background-color: unset;
+        width: unset;
+    }
+
+    header nav a{
+        border: none;
+        padding: 2rem;
+        display: inline-block;
+    }
+
+    header nav a:hover{
+        color: #5bc0b4;
+        text-decoration: underline;
+    }
+
+    .social{
+        padding-right: 2rem;
+    }
+
+    h1{
+        margin-left: -16rem;
+    }
+
+    .call-to-action{
+        padding: 20rem 3rem 5rem;
+    }
+
+    .call-to-action h2{
+        font-size: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    .parralax{
+        width: 110%;
+    }
+
+    p, h3{
+        max-width: 900px;
+        margin: .5rem auto;
+    }
+
+    h3{
+        text-align: left;
+    }
+
+    .gallery div{
+        max-width: 900px;
+        margin: 1rem auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .gallery img{
+        display: block;
+        width: 31%;
+        margin: .5rem;
+        padding: 0;
+    }
+
+    .gallery .panorama{
+        width: 100%;
+    }
+
+    .routes{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 25px auto;
+        grid-gap: 10px;
+    }
+
+    .routes h3{
+        grid-area: 1/1/2/4;;
+    }
+
+    form{
+        max-width: 500px;
+        margin: 1rem auto;
+    }
+
+    input[type=text], [type=email], textarea{
+        max-width: 450px;
+    }
+
+    footer{
+        justify-content: space-between;
+        padding: .5rem 1rem;
+    }
+}
