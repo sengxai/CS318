@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shop</title>
+
+        <!--Importing Bootstrap 4.0 css-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="toggle-nav.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="images/Bynie_Logo_justt_letters.png" class="logo" alt="Bynie Logo">
+            <div class="menu" onclick="toggleNav()">
+                <svg viewBox="0 0 100 80" width="30" height="30">
+                  <rect fill="black" width="100" height="15" ></rect>
+                  <rect fill="black" y="30" width="100" height="15" ></rect>
+                  <rect fill="black" y="60" width="100" height="15" ></rect>
+                </svg>
+            </div>
+
+            <nav class="toggle-nav">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="shop.html" class="active">Shop</a>
+                <a href="faq.html">FAQ</a>
+                <a href="sizing.html">Sizing</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Shop</h1>
+
+            <section class="shop-section">
+                <h2 class="shop-heading">Sales</h2>
+                <!--- Source and implementation example of the carousel https://getbootstrap.com/docs/4.0/components/carousel/-->
+
+                <div id="carouselSalesItemControls" class="carousel multi-item-carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4">
+                                    <img src="images/nails_on_sale/sales_stock_nails_1.jpg" class="d-block  home-pic" alt="Five pink cheetah nail set">
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <img src="images/nails_on_sale/sales_stock_nails_2.jpg" class="d-block  home-pic" alt="Five white nail set">
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <img src="images/nails_on_sale/sales_stock_nails_3.jpg" class="d-block  home-pic" alt="Five pinkn nail set with jewels">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4">
+                                    <img src="images/nails_on_sale/sales_stock_nails_4.jpg" class="d-block  home-pic" alt="Five pinkn nail set with jewels">
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <img src="images/nails_on_sale/sales_stock_nails_5.jpg" class="d-block  home-pic" alt="Five emerald nail set">
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <img src="images/nails_on_sale/sales_stock_nails_6.jpg" class="d-block  home-pic" alt="Five Hmong inspired purple nail set">
+                                </div>
+                            </div>
+                    </div>
+                    
+                    </div>
+                    <a class="carousel-control-prev shop" href="#carouselSalesItemControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next shop" href="#carouselSalesItemControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="shop-section">
+            <br><h2 class="shop-heading">New Items</h2>
+                <div id="carouselNewItemsControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4">
+                                <img src="images/home_custom_nails/custom_nails_1.jpg" class="d-block  home-pic" alt="Ten Custom Nail Set">
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <img src="images/home_custom_nails/custom_nails_2.jpg" class="d-block  home-pic" alt="Four Custom Nail Set">
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <img src="images/home_custom_nails/custom_nails_3.jpg" class="d-block  home-pic" alt="White and Pink Custom Nail Set">
+                            </div>
+                            </div>
+                    </div>
+                    <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4">
+                                    <img src="images/home_custom_nails/custom_nails_4.jpg" class="d-block  home-pic" alt="Ten PInk Custom Nail Set">
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <img src="images/home_custom_nails/custom_nails_5.jpg" class="d-block  home-pic" alt="Ten jeweled Custom Nail Set">
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <img src="images/home_custom_nails/pokemon_nails.jpg" class="d-block  home-pic" alt="Custom Pokemon Nail Set">
+                                </div>
+                            </div>
+                    </div>
+                    
+                    </div>
+                    <a class="carousel-control-prev shop" href="#carouselNewItemsControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next shop" href="#carouselNewItemsControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="shop-section">
+            <br><h2 class="shop-heading">Custom Items</h2>
+                <div id="carouselCustomItemsControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="images/custom_sets/custom_set_1.jpg" class="d-block  home-pic" alt="Twenty Pink Custom Nail Sets">
+                                </div>
+                                <div class="col-4">
+                                    <img src="images/custom_sets/custom_set_2.jpg" class="d-block  home-pic" alt="Twenty Pink Custom Nail Sets">
+                                </div>
+                                <div class="col-4">
+                                    <img src="images/custom_sets/custom_set_3.jpg" class="d-block  home-pic" alt="Ten Blakc and Pink Nail Set">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4">
+                                    <img src="images/regular_stock_nails/regular_stock_nails_1.jpg" class="d-block  home-pic" alt="Five Black Nail Set">
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <img src="images/regular_stock_nails/regular_stock_nails_2.jpg" class="d-block  home-pic" alt="Five Pink Nail Set">
+                                </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <img src="images/regular_stock_nails/regular_stock_nails_3.jpg" class="d-block  home-pic" alt="Five white Nail Set">
+                                </div>
+                            </div>
+                    </div>
+                    
+                    </div>
+                    <a class="carousel-control-prev shop" href="#carouselCustomItemsControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next shop" href="#carouselCustomItemsControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+         <!-- Import.js Popper and Bootstrap.js-->
+         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+</html>

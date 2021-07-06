@@ -1,0 +1,382 @@
+body{
+    margin: 0;
+    padding-top: 1rem;
+    background-color: #F8C3AA  ;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*** Home ***/
+/*** Override carousel arrows and changed colors ***/
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+   
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-prev{
+    height: 30px;
+    width: 30px;
+    top: 12rem;
+    left: 5rem;
+}
+
+.carousel-control-next{
+    height: 30px;
+    width: 30px;
+    top: 12rem;
+    right: 5rem;
+}
+
+.home-pic{
+    width: 55%;
+}
+
+.carousel-inner{
+    width: 50%;
+    left: 12rem;
+    padding-top: 1rem;
+}
+
+  /*** Home End ***/
+.toggle-nav{
+    z-index: 1;
+}
+.menu{
+    position: absolute;
+    color: white;
+    padding: .5rem;
+    top: 2rem;
+    right: 2rem;
+}
+
+.menu:hover{
+    cursor: pointer;
+    background-color: #F6E1E1;
+}
+
+nav{
+    display: none;
+    position: absolute;
+    top: 5.5rem;
+    right: 2rem;
+    
+}
+
+nav a{
+    display: block;
+    background-color: #FFF0C1;
+    color: black;
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+.menu-active{
+    background-color: #F6E1E1;
+    color: black;
+}
+
+.show{
+    display:block;
+}
+.logo{
+    width: 50%;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+/*** Shop ***/
+.shop-heading{
+    text-align: left;
+    padding-left: 6rem;
+}
+
+.shop-section{
+    background-color: #FFF0C1;
+    margin: 4rem;
+    padding: 2rem;
+}
+
+/*** End of shop ***/
+
+h1, h2, h3{
+    font-family: 'Noto Serif', serif;
+}
+
+p{
+    font-family: 'PT Serif', serif;
+}
+
+/*** FAQ ***/
+.faq{
+    background-color: #F6E1E1;
+    margin: 4rem;
+    padding: 2rem;
+}
+/*** END of FAQ ***/
+
+/** About section done***/
+
+.about-container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.profile_pic{
+    width: 65%;
+    align-self: center;
+}
+
+.bio{
+    background-color: white;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    padding: 2rem;
+    font-size: larger;
+}
+/*** End About Section ***/
+
+/*** Sizing section ***/
+.sizing-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.rect-nails{
+    width: 50%;
+    margin: 1rem;
+}
+
+.size-chart{
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.charts{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*** End sizing section ***/
+
+/*** Contact section Done***/
+
+form{
+    padding: 1rem 2rem;
+    width: 32rem;
+    margin: 1rem auto;
+    background-color: #F6E1E1;
+}
+
+label{
+    display: block;
+    font-size: 1rem;
+    margin: 1rem 0 .25rem;
+}
+
+input[type=text], [type=email]{
+    font-size: 1rem;
+    width: 30rem;
+    border: 3px solid white;
+    padding: .5rem;
+    background-color: white;
+}
+
+textarea{
+    width: 32rem;
+    font-size: 1rem;
+    border: 3px solid white;
+    background-color: white;
+
+}
+
+input[type=reset], input[type=submit]{
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 1rem 2rem 0 0;
+}
+.insta-pic{
+    width: 100%;
+}
+
+.insta{
+    display: block;
+    height: 360px;
+    width: 360px;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*** End contact section ***/
+
+/* Full screen mode */
+@media (min-width: 1200px){
+    .menu{
+        display: none;
+    }
+
+    .logo{
+        width: 50%;
+    }
+    
+    nav{
+        display: block;
+        position: unset;
+    }
+    nav a{
+        display: inline-block;
+        margin: 1rem;
+        background-color: #F8C3AA;
+        border: 0px;
+    }
+
+    /*** Sizing page start done***/
+    .sizing-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+   
+    .rect-nails{
+        width: 28%;
+        margin: 1rem;
+    }
+
+    .size-chart{
+        width: 22%;
+        margin-left: 1rem;
+    }
+
+    .charts{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    
+    /*** Sizing page end **/
+
+    /*** About Page Start done ***/
+    .about-container{
+        display: flex;
+        flex-direction: row;
+        margin: 4rem;
+        align-content: center;
+    }
+
+    .profile_pic{
+        width: 50%;
+        padding-left: 2rem;
+    }
+
+    .bio{
+        background-color: white;
+        margin: 0;
+        padding: 2rem;
+        font-size: larger;
+    }
+    /*** About Page End ***/
+
+    /*** Homepage Start ***/
+    .home-pic{
+        width: 75%;
+    }
+
+    .carousel-inner{
+        width: 75%;
+        left: 13rem;
+        padding-top: 1rem;
+    }
+
+    .carousel-inner > .carousel-items{
+        height: 570px;
+    }
+    /*** HOmepage end ***/
+
+    .carousel-control-prev.shop{
+        height: 30px;
+        width: 30px;
+        top: 7rem;
+        left: 5rem;
+    }
+    .carousel-control-next.shop{
+        height: 30px;
+        width: 30px;
+        top: 7rem;
+        right: 5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+    .carousel-control-prev.shop{
+        height: 30px;
+        width: 30px;
+        top: 3rem;
+        left: 1rem;
+    }
+    .carousel-control-next.shop{
+        height: 30px;
+        width: 30px;
+        top: 3rem;
+        right: 3rem;
+    }
+
+    .carousel-inner{
+        width: 75%;
+        left: 6em;
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width: 767px){
+    .carousel-control-prev.shop{
+        height: 30px;
+        width: 30px;
+        top: 15rem;
+        left: 1rem;
+    }
+    .carousel-control-next.shop{
+        height: 30px;
+        width: 30px;
+        top: 15rem;
+        right: 1rem;
+    }
+
+    .carousel-inner{
+        width: 75%;
+        left: 6em;
+        padding-top: 1rem;
+    }
+}
